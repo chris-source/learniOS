@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1AA9EC6D-C780-4A4D-881D-DF7E950A0AC6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RecipeBookMe</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>38148EEB4BD9E007844CCE48014C963BAEAAFB29</key>
+		<string>https://github.com/mexiQQ/learniOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RecipeBookMe.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>38148EEB4BD9E007844CCE48014C963BAEAAFB29</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mexiQQ/learniOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>38148EEB4BD9E007844CCE48014C963BAEAAFB29</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>38148EEB4BD9E007844CCE48014C963BAEAAFB29</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RecipeBookMe</string>
+		</dict>
+	</array>
+</dict>
+</plist>

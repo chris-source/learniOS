@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="46" sectionHeaderHeight="10" sectionFooterHeight="10" id="C6k-PX-SrL">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="-10" y="0.0" width="330" height="544"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
@@ -33,7 +33,7 @@
                                 </connections>
                             </tableView>
                             <searchBar contentMode="redraw" id="wft-OR-CFD">
-                                <rect key="frame" x="0.0" y="65" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="67" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -45,8 +45,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="RecipeBookme" id="fWv-FC-I5I"/>
                     <connections>
+                        <outlet property="mytableView" destination="C6k-PX-SrL" id="p5y-Zs-RBA"/>
                         <outlet property="searchDisplayController" destination="y7e-N6-VEo" id="wTE-Fd-XN5"/>
-                        <outlet property="tableView" destination="C6k-PX-SrL" id="76N-op-XN6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
