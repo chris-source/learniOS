@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF7A2E9E19C1D2AD00FFA912 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7A2E9D19C1D2AD00FFA912 /* DetailViewController.m */; };
+		AF7A2EA119C1F08800FFA912 /* AboutUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7A2EA019C1F08800FFA912 /* AboutUIController.m */; };
 		AFFCB54319C075D800E72013 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFCB54219C075D800E72013 /* main.m */; };
 		AFFCB54619C075D800E72013 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFCB54519C075D800E72013 /* AppDelegate.m */; };
 		AFFCB54919C075D800E72013 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFCB54819C075D800E72013 /* ViewController.m */; };
@@ -26,6 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF7A2E9C19C1D2AD00FFA912 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../DetailViewController.h; sourceTree = "<group>"; };
+		AF7A2E9D19C1D2AD00FFA912 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ../DetailViewController.m; sourceTree = "<group>"; };
+		AF7A2E9F19C1F08800FFA912 /* AboutUIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUIController.h; sourceTree = "<group>"; };
+		AF7A2EA019C1F08800FFA912 /* AboutUIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUIController.m; sourceTree = "<group>"; };
 		AFFCB53D19C075D800E72013 /* RecipeBookMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeBookMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFCB54119C075D800E72013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFFCB54219C075D800E72013 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -81,8 +87,12 @@
 			children = (
 				AFFCB54419C075D800E72013 /* AppDelegate.h */,
 				AFFCB54519C075D800E72013 /* AppDelegate.m */,
+				AF7A2E9C19C1D2AD00FFA912 /* DetailViewController.h */,
+				AF7A2E9D19C1D2AD00FFA912 /* DetailViewController.m */,
 				AFFCB54719C075D800E72013 /* ViewController.h */,
 				AFFCB54819C075D800E72013 /* ViewController.m */,
+				AF7A2E9F19C1F08800FFA912 /* AboutUIController.h */,
+				AF7A2EA019C1F08800FFA912 /* AboutUIController.m */,
 				AFFCB54A19C075D800E72013 /* Main.storyboard */,
 				AFFCB54D19C075D800E72013 /* Images.xcassets */,
 				AFFCB54019C075D800E72013 /* Supporting Files */,
@@ -218,6 +228,8 @@
 				AFFCB54919C075D800E72013 /* ViewController.m in Sources */,
 				AFFCB54619C075D800E72013 /* AppDelegate.m in Sources */,
 				AFFCB54319C075D800E72013 /* main.m in Sources */,
+				AF7A2EA119C1F08800FFA912 /* AboutUIController.m in Sources */,
+				AF7A2E9E19C1D2AD00FFA912 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +414,7 @@
 				AFFCB55F19C075D800E72013 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AFFCB56019C075D800E72013 /* Build configuration list for PBXNativeTarget "RecipeBookMeTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +423,7 @@
 				AFFCB56219C075D800E72013 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
