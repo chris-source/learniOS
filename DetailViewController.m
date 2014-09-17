@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import "Recipe.h"
 
 @interface DetailViewController ()
 
@@ -15,13 +16,13 @@
 @implementation DetailViewController
 
 @synthesize recipeLabel;
-@synthesize recipeName;
+@synthesize recipe;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSLog(@"hello %@",recipeName);
-    recipeLabel.text = recipeName;
+    Recipe *rec = recipe;
+    recipeLabel.text =  rec.name;
 }
 
 - (void)didReceiveMemoryWarning {

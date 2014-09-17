@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "DetailViewController.h"
 #import "Recipe.h"
+#import "RecipeTableCellTableViewCell.h"
 
 @interface ViewController ()
 
@@ -145,12 +146,12 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *simpleTableIdentifier = @"RecipeCell";
+    static NSString *CoustomerTableIdentifier = @"RecipeTableCellTableViewCell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    RecipeTableCellTableViewCell *cell =(RecipeTableCellTableViewCell *) [tableView dequeueReusableCellWithIdentifier:CoustomerTableIdentifier];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+       cell = [[RecipeTableCellTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CoustomerTableIdentifier];
     }
     
     Recipe *recipe = nil;
@@ -161,7 +162,10 @@
     }
     
     NSLog(@"值：%@",recipe.name);
-    cell.textLabel.text =  recipe.name ;
+    
+    cell.nameLabel.text =  recipe.name ;
+    
+    NSLog(@"你好：%@",cell.nameLabel.text);
     return cell;
 }
 
@@ -173,7 +177,7 @@
         
         NSLog(@"hi%@",[recipes objectAtIndex:indexPath.row]);
         
-        destViewController.recipeName = [recipes objectAtIndex:indexPath.row];
+        destViewController.recipe = [recipes objectAtIndex:indexPath.row];
     }
 }
 
@@ -196,9 +200,9 @@
                                scope:[[self.searchDisplayController.searchBar scopeButtonTitles]
                                       objectAtIndex:[self.searchDisplayController.searchBar
                                                      selectedScopeButtonIndex]]];
-    
     return YES;
 }
+
 
 
 @end

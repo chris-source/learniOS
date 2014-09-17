@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AF0FC3FF19C7F7970046D267 /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0FC3FE19C7F7970046D267 /* Recipe.m */; };
+		AF6141ED19C9C8870040B29A /* RecipeTableCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6141EC19C9C8870040B29A /* RecipeTableCellTableViewCell.m */; };
 		AF7A2E9E19C1D2AD00FFA912 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7A2E9D19C1D2AD00FFA912 /* DetailViewController.m */; };
 		AF7A2EA119C1F08800FFA912 /* AboutUIController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7A2EA019C1F08800FFA912 /* AboutUIController.m */; };
 		AFFCB54319C075D800E72013 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFCB54219C075D800E72013 /* main.m */; };
@@ -31,6 +32,8 @@
 /* Begin PBXFileReference section */
 		AF0FC3FD19C7F7970046D267 /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
 		AF0FC3FE19C7F7970046D267 /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
+		AF6141EB19C9C8870040B29A /* RecipeTableCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeTableCellTableViewCell.h; sourceTree = "<group>"; };
+		AF6141EC19C9C8870040B29A /* RecipeTableCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeTableCellTableViewCell.m; sourceTree = "<group>"; };
 		AF7A2E9C19C1D2AD00FFA912 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../DetailViewController.h; sourceTree = "<group>"; };
 		AF7A2E9D19C1D2AD00FFA912 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ../DetailViewController.m; sourceTree = "<group>"; };
 		AF7A2E9F19C1F08800FFA912 /* AboutUIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUIController.h; sourceTree = "<group>"; };
@@ -101,6 +104,8 @@
 				AFFCB54A19C075D800E72013 /* Main.storyboard */,
 				AFFCB54D19C075D800E72013 /* Images.xcassets */,
 				AFFCB54019C075D800E72013 /* Supporting Files */,
+				AF6141EB19C9C8870040B29A /* RecipeTableCellTableViewCell.h */,
+				AF6141EC19C9C8870040B29A /* RecipeTableCellTableViewCell.m */,
 			);
 			path = RecipeBookMe;
 			sourceTree = "<group>";
@@ -236,6 +241,7 @@
 				AFFCB54319C075D800E72013 /* main.m in Sources */,
 				AF7A2EA119C1F08800FFA912 /* AboutUIController.m in Sources */,
 				AF7A2E9E19C1D2AD00FFA912 /* DetailViewController.m in Sources */,
+				AF6141ED19C9C8870040B29A /* RecipeTableCellTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
