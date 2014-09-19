@@ -21,7 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
     Recipe *rec = recipe;
+    
     recipeLabel.text =  rec.name;
 }
 

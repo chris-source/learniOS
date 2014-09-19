@@ -138,7 +138,6 @@
 {
     if (tableView == self.searchDisplayController.searchResultsTableView) {
         return [searchResults count];
-        
     } else {
         return [recipes count];
     }
@@ -161,38 +160,51 @@
         recipe = [recipes objectAtIndex:indexPath.row];
     }
     
-    NSLog(@"值：%@",recipe.name);
+    cell.nameLabel.text =  recipe.name;
+    cell.prepTimeLabel.text= recipe.prepTime;
+    cell.thumbnailImageView.image = [UIImage imageNamed:recipe.image];
     
-    cell.nameLabel.text =  recipe.name ;
     
-    NSLog(@"你好：%@",cell.nameLabel.text);
+    
     return cell;
 }
+
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"showRecipeDetail"]) {
         
-        NSIndexPath *indexPath = [self.mytableView indexPathForSelectedRow];
+        NSIndexPath *indexPath = nil;
+        Recipe *recipe = nil;
+        
+        if (self.searchDisplayController.active) {
+            indexPath = [self.searchDisplayController.searchResultsTableView indexPathForSelectedRow];
+            recipe = [searchResults objectAtIndex:indexPath.row];
+        } else {
+            indexPath = [self.mytableView indexPathForSelectedRow];
+            recipe = [recipes objectAtIndex:indexPath.row];
+        }
+        
         DetailViewController *destViewController = segue.destinationViewController;
-        
         NSLog(@"hi%@",[recipes objectAtIndex:indexPath.row]);
-        
         destViewController.recipe = [recipes objectAtIndex:indexPath.row];
     }
 }
+
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 71;
 }
 
+
 - (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
 {
     NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"name contains[c] %@", searchText];
-    
     searchResults = [recipes filteredArrayUsingPredicate:resultPredicate];
-    NSLog(@"Hello world");
+
+    
 }
+
 
 -(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
 {
@@ -202,8 +214,6 @@
                                                      selectedScopeButtonIndex]]];
     return YES;
 }
-
-
 
 @end
 

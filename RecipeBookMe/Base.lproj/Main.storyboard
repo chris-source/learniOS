@@ -17,14 +17,14 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="61" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="C6k-PX-SrL">
-                                <rect key="frame" x="0.0" y="8" width="320" height="638"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="603"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <searchBar key="tableHeaderView" contentMode="redraw" id="wft-OR-CFD">
+                                <searchBar key="tableHeaderView" contentMode="redraw" id="FeH-2H-BqR">
                                     <rect key="frame" x="0.0" y="64" width="320" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <textInputTraits key="textInputTraits"/>
                                     <connections>
-                                        <outlet property="delegate" destination="vXZ-lx-hvc" id="ZSd-tk-pvI"/>
+                                        <outlet property="delegate" destination="vXZ-lx-hvc" id="hvt-Nv-mMJ"/>
                                     </connections>
                                 </searchBar>
                                 <prototypes>
@@ -37,13 +37,13 @@
                                                     <rect key="frame" x="13" y="2" width="59" height="56"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nU-Wa-Jrc">
-                                                    <rect key="frame" x="92" y="8" width="111" height="21"/>
+                                                    <rect key="frame" x="92" y="8" width="180" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PrepareName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvQ-hw-ExA">
-                                                    <rect key="frame" x="92" y="31" width="84" height="21"/>
+                                                    <rect key="frame" x="92" y="37" width="84" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -69,17 +69,17 @@
                     <navigationItem key="navigationItem" title="RecipeBookme" id="WTl-eC-ekx"/>
                     <connections>
                         <outlet property="mytableView" destination="C6k-PX-SrL" id="p5y-Zs-RBA"/>
-                        <outlet property="searchDisplayController" destination="y7e-N6-VEo" id="wTE-Fd-XN5"/>
+                        <outlet property="searchDisplayController" destination="bDr-dd-ZW7" id="oLw-dV-2cJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="y7e-N6-VEo">
+                <searchDisplayController id="bDr-dd-ZW7">
                     <connections>
-                        <outlet property="delegate" destination="vXZ-lx-hvc" id="yN7-I8-uiC"/>
-                        <outlet property="searchBar" destination="wft-OR-CFD" id="y3p-f0-KX4"/>
-                        <outlet property="searchContentsController" destination="vXZ-lx-hvc" id="VPy-EU-vhQ"/>
-                        <outlet property="searchResultsDataSource" destination="vXZ-lx-hvc" id="bGd-rc-48f"/>
-                        <outlet property="searchResultsDelegate" destination="vXZ-lx-hvc" id="1Yu-Ce-Uxh"/>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="tw6-Qc-eck"/>
+                        <outlet property="searchBar" destination="FeH-2H-BqR" id="Tp1-2p-6yP"/>
+                        <outlet property="searchContentsController" destination="vXZ-lx-hvc" id="u3a-eI-i3V"/>
+                        <outlet property="searchResultsDataSource" destination="vXZ-lx-hvc" id="CAh-Fs-8ew"/>
+                        <outlet property="searchResultsDelegate" destination="vXZ-lx-hvc" id="I4t-KZ-qkM"/>
                     </connections>
                 </searchDisplayController>
             </objects>
